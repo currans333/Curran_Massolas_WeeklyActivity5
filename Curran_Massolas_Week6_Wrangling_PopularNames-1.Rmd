@@ -79,6 +79,9 @@ No new variables have been introduced.
 
 ### Step 5
 
+1.) Find the most popular girl baby names in 1880, 1947, and 2013. Group the BabyNames dataframe by sex and by year, then filter the data for the top ranked names. Filter the table further for the top ranked girl names in 1880, 1947, and 2013.
+
+2.) Create a glyph-ready table that includes the "name," "count," and "year" variables for the cases discovered in the previous step, by filtering out all other names.
 
 
 ### Step 6
