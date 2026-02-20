@@ -55,7 +55,7 @@ The variable "sex" would not appear in the graph.
 
 ##### What variable(s) in the graph are similar to corresponding variables in the raw data table, but might have been transformed in some way?
 
-The "name" variable would contain only the most popular girl names in 1880, 1981, and 2013. The rest of the girl baby names and all boy baby names would be filtered out.
+The variables "name," "count," and "year" will remain the same.
 
 
 
@@ -63,15 +63,17 @@ The "name" variable would contain only the most popular girl names in 1880, 1981
 
 ##### Have cases been filtered out?
 
+The cases would be the most popular girl names in 1880, 1947, and 2013. The rest of the girl baby names and all boy baby names would be filtered out.
 
 
 ##### Have cases been grouped and summarized within groups in any way?
 
+No, cases have not been grouped in any way.
 
 
 ##### Have any new variables been introduced?  If so, what the relationship between the new variables and existing variables?
 
-
+No new variables have been introduced.
 
 
 
