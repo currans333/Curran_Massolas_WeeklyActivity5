@@ -1,8 +1,8 @@
 ---
 title: "Popular names"
 subtitle: "Week 6 Activity"
-author: "Author 1 and Author 2"
-date: ""
+author: "Shannon Curran and Sophie Massolas"
+date: "22 February 2026"
 output: 
   html_notebook:
     fig_height: 3
@@ -36,7 +36,9 @@ data("BabyNames")
 
 ```{r}
 ## Helpful to look at the data a few different ways (see Ch 9 for more).
-
+glimpse(BabyNames)
+str(BabyNames)
+summary(BabyNames)
 ```
 
 ### Step 2
@@ -48,11 +50,12 @@ data("BabyNames")
 
 ##### What variable(s) from the raw data table do not appear at all in the graph?
 
+The variable "sex" would not appear in the graph.
 
 
 ##### What variable(s) in the graph are similar to corresponding variables in the raw data table, but might have been transformed in some way?
 
-
+The "name" variable would contain only the most popular girl names in 1880, 1981, and 2013. The rest of the girl baby names and all boy baby names would be filtered out.
 
 
 
