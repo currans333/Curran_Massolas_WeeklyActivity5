@@ -79,9 +79,17 @@ No new variables have been introduced.
 
 ### Step 5
 
-1.) Find the most popular girl baby names in 1880, 1947, and 2013. Group the BabyNames dataframe by sex and by year, then filter the data for the top ranked names. Filter the table further for the top ranked girl names in 1880, 1947, and 2013.
+1.) First, we want to find the most popular girl baby names in 1880, 1947, and 2013. Group the BabyNames dataframe by sex and by year.
 
-2.) Create a glyph-ready table that includes the "name," "count," and "year" variables for the cases discovered in the previous step, by filtering out all other names.
+2.) Filter out the boy names.
+
+3.) Filter the data for the top ranked names for each year. 
+
+4.) Filter for remaining names only from 1880, 1947, and 2013.
+
+5.) Next, we want to create our glyph-ready table. Remove the "sex" variable. 
+
+6.) Filter for only the names discovered in Step 4. Our table is ready to be graphed.
 
 
 ### Step 6
@@ -93,7 +101,11 @@ No new variables have been introduced.
 ### Step 7
 
 ```{r}
-
+BabyNames %>% 
+    group_by(year) %>%
+    filter(sex == "F") %>%
+    filter(rank(desc(count)) == 1) %>%
+    filter(year %in% c(1880,1947,2013))
 
 ```
 
